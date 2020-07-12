@@ -18,6 +18,7 @@ module.exports = gql`
     speakers: [Speaker]
     speakerById(id: ID): Speaker
   }
+
   type Mutation {
     toggleFavoriteSession(id: ID): Session
     addNewSession(session: SessionInput): Session
